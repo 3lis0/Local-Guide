@@ -82,38 +82,22 @@ The app transforms traditional tourism by enabling direct connections between tr
 
 ```
 LocalGuideApp/
-├── app/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── kotlin/com/localguide/
-│   │   │   │   ├── ui/
-│   │   │   │   │   ├── components/       # Reusable UI components
-│   │   │   │   │   ├── screens/          # App screens
-│   │   │   │   │   ├── theme/            # Material Design theme
-│   │   │   │   │   └── navigation/       # Navigation logic
-│   │   │   │   ├── data/
-│   │   │   │   │   ├── local/            # Room database
-│   │   │   │   │   ├── remote/           # Firebase services
-│   │   │   │   │   └── repository/       # Data repositories
-│   │   │   │   ├── domain/
-│   │   │   │   │   ├── model/            # Data models
-│   │   │   │   │   └── usecase/          # Business logic
-│   │   │   │   └── presentation/
-│   │   │   │       └── viewmodel/        # ViewModels
-│   │   │   └── res/
-│   │   │       ├── layout/               # XML layouts (if any)
-│   │   │       ├── values/               # Strings, colors, dimensions
-│   │   │       └── drawable/             # Icons and images
-│   │   └── test/                         # Unit tests
-├── recommendation_engine/
-│   ├── app.py                           # Flask API
-│   ├── model.py                         # ML recommendation model
-│   ├── data_preprocessing.py            # Data cleaning and preparation
-│   └── requirements.txt                 # Python dependencies
-├── docs/
-│   ├── ui_screenshots/                  # App screenshots
-│   ├── architecture_diagrams/           # UML diagrams
-│   └── api_documentation/               # API docs
+├── assets/                          # App assets and resources
+├── java/com/example/localguide/
+│   ├── AppMainScreens/              # Main application screens
+│   ├── Data/                        # Data layer (Room, Firebase)
+│   ├── HomeScreen/                  # Home screen components
+│   │   └── GuidePerspective/        # Guide-specific UI screens
+│   ├── Model/                       # Data models and entities
+│   ├── OnboardingScreens/           # Welcome and intro screens
+│   ├── Registration/                # Authentication screens
+│   ├── ui/
+│   │   └── theme/                   # Material Design theme
+│   │   └── uiComponent/                 # Reusable UI components
+├── recommendation model/            # AI recommendation engine
+├── res/
+│     └── drawable/                    # Icons, images, vectors
+└── ui-packages/            # API docs
 └── README.md
 ```
 
@@ -124,17 +108,17 @@ LocalGuideApp/
 ### Onboarding Experience
 | Welcome Screen | Registration | Interest Selection |
 |:---:|:---:|:---:|
-| ![Onboarding 1](res\drawable\YourLocalGuide-2.jpg) | ![Onboarding 2](res\drawable\YourLocalGuide-9.jpg) | ![Interests](res\drawable\photo_5902341214798201941_y.jpg) |
+| ![Onboarding 1](res/drawable/YourLocalGuide-2.jpg) | ![Onboarding 2](res/drawable/YourLocalGuide-9.jpg) | ![Interests](res/drawable/photo_5902341214798201941_y.jpg) |
 
 ### Main Application
 | Home Screen | Guide Profiles | Trip Planning |
 |:---:|:---:|:---:|
-| ![Home](res\drawable\YourLocalGuide-8.jpg) | ![Profiles](res\drawable\YourLocalGuide-12.jpg) | ![Planning](res\drawable\YourLocalGuide-14.jpg) |
+| ![Home](res/drawable/YourLocalGuide-8.jpg) | ![Profiles](res/drawable/YourLocalGuide-12.jpg) | ![Planning](res/drawable/YourLocalGuide-14.jpg) |
 
 ### Guide Perspective
 | Guide Dashboard | Tour Management |
 |:---:|:---:|
-| ![Guide Home](res\drawable\photo_5902341214798201927_y.jpg) | ![Tour Management](res\drawable\photo_5902341214798201926_y.jpg) |
+| ![Guide Home](res/drawable/photo_5902341214798201927_y.jpg) | ![Tour Management](res/drawable/photo_5902341214798201926_y.jpg) |
 
 ---
 
